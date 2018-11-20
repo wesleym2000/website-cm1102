@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CONTACT</title>
+		<meta name="Information" />
+		<meta name="viewport" content="width=device-width" /> <!-- This meta tag makes the width of the screen = to the width of the page.
+                                                                   This allows the page's scaling and responsiveness to work on mobile screens.-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/><!-- Bootstrap -->
+		<link href="style.css" type= "text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	</head>
+	
+	<body background="geometric.jpg">
+	<header>
+	<nav class="topnav"> <!-- 'topnav' and 'nav navbar-nav' bootstrap creates a basic format for the navigation that I have edited further in the css. -->
+		<ul class="nav navbar-nav"> 
+			<li><a href="home.html">Home</a></li> <!-- 'nav' uses list element to make styling and formating easier. -->
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li class="active"><a href="#">Contact Me</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>
+
+		<div class="jumbotron"> <!-- jumbotron bootstrap also creates a basic template for the heading that I've then styled in the css -->
+			<h1>-C O N T A C T-</h1>
+		</div>
+		<!--form-->
+		<form>
+		<input type="text" name="" value="">
+		<input type="text" name="" value="">
+		<input type="text" name="" value="">
+		<input type="text" name="" value="">
+		<form>
+		<!--3rd party-->
+		<div id="map"></div>
+		
+		<script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: -25.344, lng: 131.036};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+		
+		<script async defer 
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAansIY2fdMN0t-TRJym2ZteA30Hd6gnJE&callback=initMap">
+		</script>
+	</main>
+	<footer><!-- I've kept a footer in for the sake of consistency and tidiness. Even tho It's not currently doing anything.  -->
+	</footer>
+	</body>
+</html>

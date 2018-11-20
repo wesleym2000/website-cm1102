@@ -1,0 +1,184 @@
+.jumbotron{
+	background-color: rgba(0,0,0,0); 
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.6) ,rgba(0,0,0,0));/* gradient that starts black and fades into transparent color */
+	padding-bottom: 0px;
+}
+
+.jumbotron h1{
+	color: black;
+	text-align: center; /* Text allign: center and margin: auto centers a box while keeping the page responsive */
+	font-family: 'Montserrat', sans-serif;/* setting the text to the font called on html pages */
+	
+	 
+	background-color: white;
+	border-radius:7px;
+	box-shadow: 5px 5px black;
+	
+	font-size: 500%; /* Larger heading makes it more readable. note that all contents in the website are large and consist of contrasting black and white colors
+                        which doesn't just make it easier for visually impaired users to view the contents but colour-blind people too - even with a 
+						colorful background.*/
+	max-width: 600px;
+	min-width:500px;
+	margin: auto;
+	padding: 0px;
+
+}
+
+.jumbotron h3{
+	color: white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 200%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-shadow: 1px 1px black;
+	
+}
+
+
+body{
+	background-repeat:no-repeat;
+	background-color: #1A6785;
+	
+	border-style: solid; /* These lines help create a fixed white border around the window.*/
+    border-width: 5px;
+	border-color: white;
+	box-sizing: border-box;
+    min-height: 100vh;
+	
+    min-width: 555px;
+	
+}
+nav.topnav{
+	margin: auto;
+	background-color: black;
+	height: 100%; /* Use of percentages allow boxes to always cover a desired portion of the screen rather than a fixed position that doesn't 
+	                 work as well on smaller mobile devices. */
+	width: 100%;
+	margin: 0px;
+	
+	
+	display: flex; /* Centers the nav contents */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav.topnav a{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 150%;
+	transition: 0.5s;	
+}
+
+nav.topnav a:hover{
+	color:rgba(0,0,0,1);
+	background-color: white;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	
+}
+
+.shrink p{ /* Additional feature. In summary, it creates a small white box that is always visible around text that isn't unless it's hovered over(or tapped on) 
+              and the box grows bigger and shows text. 
+              This section of code is for when the text isn't visible so it's focusing on the box itself.  */
+	width: 10%;
+	min-width: 100px; /* Using min widths stops boxes from collapsing into overstretched, unpractical boxes. */
+	background-color: white;
+	border-style: solid;
+    border-width: 5px;
+	border-color: white;
+	border-radius: 20px;
+	
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+
+	color: rgba(0,0,0,0); /* The last 0 is setting the opacity of the text to 0 - meaning it's fully transparent */
+	font-size: 1px;
+	padding: 10px;
+	transition: 1s;	/* This makes the text fade out slower when the mouse cursor moves off the box.*/
+	box-shadow: 5px 5px black;
+}
+
+
+.shrink p:hover { /* This section of code makes the text color white and no longer transparent and creates a semi-transparent black background to improve readability.*/
+	transition: 1s; /* This makes the text appear slower to make the website feel more smooth.*/
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	width: 32%;
+	min-width: 500px;
+	font-size: 150%;
+	border-radius: 7px;
+}
+
+.carousel.slide {
+	height: 300px;
+	text-align: center;
+	margin: auto;
+    font-family: 'Montserrat', sans-serif;
+	text-shadow: 1px 1px black;
+	border-style: solid;
+    border-width: 5px;
+	border-color: white;
+	border-radius: 20px;
+	width: 50%;
+	
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 7px;
+	box-shadow: 3px 3px black;
+}
+
+.carousel.slide p{
+	color: white;
+	font-size:150%;
+	margin: auto;
+	width: 95%;
+	
+}
+
+.carousel.slide h3{
+	color: white;
+	text-align: center;
+	font-size: 200%;
+
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+@media only screen and (max-width: 767px) {/* Bootstrap uses col-*-* in html to adjust sizes of box elements. 
+                                              However, here I've done it manually so I have greater control over how my site looks for different screen sizes*/
+	
+	
+nav.topnav a:hover{
+	border-radius: 7px; 
+}
+
+nav.topnav a{ /* Code adjusting width of the box elements to make them bigger on smaller screens and hence easier to tap.*/
+	font-size: 250%;
+	padding: 20px;
+}
+
+.jumbotron h1{
+	border-radius: 0px;
+	font-size: 490%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	white-space: nowrap;
+	
+}
+
+body{
+	border-width:0px;
+}
+.shrink p{
+	width: 30%;
+	font-size: 20%;
+	border-radius: 20px;
+}
+.carousel.slide {
+	height: 400px;
+	width: 80%;
+}

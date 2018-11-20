@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PROJECTS</title>
+		<meta name="Information" />
+		<meta name="viewport" content="width=device-width" /> <!-- This meta tag makes the width of the screen = to the width of the page.
+                                                                   This allows the page's scaling and responsiveness to work on mobile screens.-->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/><!-- Bootstrap -->
+		<link href="style.css" type= "text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	
+	<body background="geometric.jpg">
+	
+	<header>
+	<nav class="topnav"> <!-- 'topnav' and 'nav navbar-nav' bootstrap creates a basic format for the navigation that I have edited further in the css. -->
+		<ul class="nav navbar-nav"> 
+			<li><a href="home.html">Home</a></li> <!-- 'nav' uses list element to make styling and formating easier. -->
+			<li class="active"><a href="#">Projects</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="contact.html">Contact Me</a></li>
+		</ul>
+	</nav>
+	</header>
+	
+	<main>
+	<div class="jumbotron"> <!-- jumbotron bootstrap also creates a basic template for the heading that I've then styled in the css -->
+			<h1>-P R O J E C T S-</h1>
+	</div>
+	
+    <!-- Additional feature carousel uses specific bootstrap commands and jquery called in the head to make it multi slide and auto scrolling.-->	
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- controls-->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<!-- contents -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<h3>project 1</h3>
+				<p>
+I'm an honest and open person who is constantly eager to learn new 
+things and meet new people. I'm a hard-working person which shows through my qualifications. 
+I feel it is vital for me to learn new skills to prepare me for the future.</p>
+			</div>
+
+			<div class="item">
+				<h3>project 2</h3>
+				<p> 
+I'm an honest and open person who is constantly eager to learn new 
+things and meet new people. I'm a hard-working person which shows through my qualifications. 
+I feel it is vital for me to learn new skills to prepare me for the future.</p>
+				</div>
+
+			<div class="item">
+				<h3>project 3</h3>
+				<p>
+I'm an honest and open person who is constantly eager to learn new 
+things and meet new people. I'm a hard-working person which shows through my qualifications. 
+I feel it is vital for me to learn new skills to prepare me for the future.</p>
+			</div>
+			</div>
+		
+	</main>
+	<footer><!-- I've kept a footer in for the sake of consistency and tidiness. Even tho It's not currently doing anything.  -->
+	</footer>
+	</body>
+</html>
